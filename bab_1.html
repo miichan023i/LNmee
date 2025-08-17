@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 1: pertemuan yang membawa kehancuran</title>
+    <style>
+        :root {
+            --bg-color: #d9abab;
+            --text-color: #333;
+            --link-color: #007bff;
+            --border-color: #ddd;
+            --container-bg: #fff;
+        }
+        body.dark-mode {
+            --bg-color: #d9abab;
+            --text-color: #e0e0e0;
+            --link-color: #87ceeb;
+            --border-color: #444;
+            --container-bg: #2d2d2d;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--container-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .chapter-header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .chapter-title {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .chapter-controls {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--container-bg);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--border-color);
+        }
+
+        .chapter-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .chapter-content p {
+            font-size: 1rem;
+            text-align: justify;
+            text-indent: 30px;
+            margin-bottom: 1em;
+            transition: font-size 0.2s;
+        }
+
+        .chapter-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .chapter-navigation .next-btn {
+            background-color: var(--link-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .chapter-navigation .next-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .chapter-select {
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: var(--container-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-controls">
+            <button id="fontSizeDownBtn" class="btn">-</button>
+            <button id="fontSizeUpBtn" class="btn">+</button>
+            <button id="themeToggleBtn" class="btn">Mode Terang</button>
+        </div>
+
+        <div class="chapter-header">
+            <h1 class="chapter-title">Bab 1: Awal Perjalanan</h1>
+        </div>
+      
+        <img src="https://uploads-ssl.webflow.com/5d7e8885cad5174a2fcb98d7/64ad80954fb88a2143a09b72_Moona%2520Hoshinova.jpeg" alt="Ilustrasi Bab 1" class="chapter-image">
+
+        <div class="chapter-content">
+            <p>Di sebuah kota yang diselimuti kabut abadi, hiduplah seorang pemuda bernama Ren. Rambutnya seputih salju dan matanya bagai langit musim dingin. Ia bukan pahlawan, bukan juga penjahat. Ia hanyalah seorang pembuat peta yang menghabiskan hari-harinya di antara gulungan perkamen tua dan tinta yang berbau aneh. Hidupnya tenang, monoton, hampir membosankan, sampai sebuah gulungan peta kuno tiba di mejanya.</p>
+            <p>Gulungan itu bukan terbuat dari kertas biasa. Teksturnya terasa seperti kulit naga yang sudah membatu, dan di permukaannya tergambar labirin yang tidak ada di peta mana pun yang pernah ia lihat. Di tengah-tengah labirin itu, sebuah simbol berkilauan, seolah memanggilnya.</p>
+            <p>Ren mencoba mengabaikannya. Ia tahu cerita-cerita tentang peta terkutuk yang membawa malapetaka bagi pemiliknya. Namun, rasa penasaran, rasa haus akan petualangan yang selama ini ia kubur dalam-dalam, perlahan-lahan mulai bangkit. Malam itu, ia tidak tidur. Ia terus menatap gulungan itu, memimpikan tempat-tempat yang belum pernah ia jelajahi.</p>
+            <p>Keesokan paginya, ia membuat keputusan yang akan mengubah segalanya. Ia akan mengikuti peta itu. Ia mengemasi ranselnya dengan perbekalan seadanya: sebuah kompas tua, beberapa potong roti kering, dan pisau kecil. Ia tahu ini gila, tapi hatinya merasa ini adalah panggilan takdir.</p>
+            <p>Peta itu membawanya keluar dari kota, melewati hutan yang lebat di mana pepohonan menjulang tinggi hingga menutupi matahari. Suara-suara aneh terdengar dari dalam kegelapan, tetapi Ren terus melangkah. Ia tahu ia tidak bisa kembali lagi.</p>
+            <p>Hutan itu berakhir di sebuah pegunungan yang puncaknya tertutup salju. Jalannya menanjak, licin dan berbahaya. Dinginnya menusuk tulang, tetapi Ren terus berjalan. Ia tidak tahu apa yang ia cari, tapi ia tahu ia semakin dekat.</p>
+            <p>Setelah berhari-hari mendaki, ia akhirnya tiba di sebuah gua. Mulut gua itu diukir dengan simbol yang sama dengan yang ada di peta. Jantungnya berdebar kencang. Ia menghela napas, lalu masuk ke dalam kegelapan yang pekat.</p>
+            <p>Di dalam gua, ia menemukan sebuah ruangan besar yang dipenuhi dengan kristal-kristal yang memancarkan cahaya lembut. Di tengah ruangan, sebuah pedang tertancap di sebuah batu. Pedang itu tampak sederhana, tetapi aura yang dipancarkannya begitu kuat, seolah ia hidup.</p>
+            <p>Ren mendekati pedang itu. Saat tangannya menyentuh gagangnya, kristal-kristal di sekitarnya mulai bergetar. Sebuah suara bergema di kepalanya, bukan suara biasa, tetapi suara yang datang dari kedalaman jiwanya. "Akhirnya, kau datang, pewaris," kata suara itu.</p>
+            <p>Ren terkejut, tetapi ia tidak takut. Ia menarik pedang itu dari batu dengan mudah, seolah pedang itu memang menunggu kedatangannya. Begitu pedang itu terangkat, cahaya kristal menjadi lebih terang dan menerangi seluruh gua.</p>
+            <p>Di luar, langit yang tadinya kelabu perlahan-lahan berubah menjadi cerah. Kabut yang selama ini menyelimuti kota mulai menghilang, memperlihatkan pemandangan yang indah dan penuh warna. Namun, Ren tidak melihat semua itu. Ia hanya menatap pedang di tangannya, siap untuk menghadapi takdir yang baru.</p>
+            <p>Ia menyadari bahwa ini baru permulaan dari petualangannya. Peta itu hanyalah pintu gerbang menuju dunia yang lebih besar. Ia tidak lagi menjadi seorang pembuat peta yang membosankan. Kini, ia adalah seorang petualang, seorang pewaris, seorang yang ditakdirkan untuk sebuah misi besar.</p>
+            <p>Ia berjalan keluar dari gua, pedang di tangannya. Ia melihat matahari terbit, dan untuk pertama kalinya dalam hidupnya, ia merasa hidup. Ia tidak tahu apa yang akan terjadi selanjutnya, tetapi ia siap untuk menghadapinya.</p>
+            <p>Di bawah sinar matahari pagi, ia melihat sebuah desa kecil di kejauhan. Orang-orang di sana tampaknya hidup dalam kebahagiaan, tidak menyadari bahwa nasib mereka telah berubah berkat seorang pemuda yang berani mengambil risiko. Ren tahu, ia harus melindungi mereka.</p>
+            <p>Tiba-tiba, ia mendengar suara gemuruh dari langit. Ia mendongak, dan melihat seekor naga raksasa melayang di atas kepalanya. Matanya merah menyala, dan sisiknya seolah terbuat dari api. Ini adalah musuh pertamanya, ujian pertama dari takdirnya.</p>
+            <p>Ren tidak gentar. Ia mengacungkan pedangnya ke langit, seolah menantang naga itu. Pedangnya memancarkan cahaya, dan naga itu merespons dengan raungan yang mengguncang bumi.</p>
+            <p>Pertarungan pun dimulai. Ren menggunakan pedangnya untuk memblokir serangan api naga. Gerakannya cepat dan lincah, seolah ia sudah berlatih selama ribuan tahun. Pedang itu terasa ringan di tangannya, seperti perpanjangan dari jiwanya sendiri.</p>
+            <p>Naga itu marah. Ia menyerang dengan lebih brutal, tetapi Ren berhasil menghindar. Ia tahu ia tidak bisa mengalahkan naga itu secara langsung. Ia harus mencari kelemahannya.</p>
+            <p>Ia melihat sebuah kristal kecil di dada naga itu, bersinar dengan cahaya yang sama dengan kristal di dalam gua. Itulah kelemahan naga itu. Ren harus menghancurkannya.</p>
+            <p>Ia berlari ke arah naga itu, melompat, dan menusukkan pedangnya ke kristal di dada naga. Kristal itu pecah, dan naga itu menjerit kesakitan. Tubuhnya perlahan-lahan berubah menjadi debu, lalu menghilang di udara.</p>
+            <p>Ren mendarat dengan aman di tanah. Ia merasa lelah, tetapi ia juga merasa gembira. Ia telah berhasil melewati ujian pertamanya. Ia telah membuktikan bahwa ia layak menjadi pewaris.</p>
+            <p>Ia melanjutkan perjalanannya. Di setiap langkahnya, ia merasa lebih kuat, lebih bijaksana. Ia bertemu dengan orang-orang baru, menjelajahi tempat-tempat baru, dan menghadapi tantangan-tantangan baru.</p>
+            <p>Ia menyadari bahwa ia tidak sendirian. Peta itu adalah warisan dari pahlawan-pahlawan masa lalu yang telah berjuang melawan kejahatan yang sama. Kini, giliran Ren untuk melanjutkan perjuangan mereka.</p>
+            <p>Ia berjalan menuju desa, siap untuk menceritakan kisahnya. Ia tidak lagi takut. Ia tidak lagi sendirian. Ia adalah Ren, sang pewaris, dan ini baru awal dari petualangannya.</p>
+            <p>Ia memasuki desa, dan orang-orang menyambutnya dengan sorak-sorai. Mereka tahu ia telah mengalahkan naga, dan mereka berterima kasih padanya. Ren tersenyum. Ia merasa bahagia, tetapi ia juga tahu bahwa masih banyak hal yang harus ia lakukan.</p>
+            <p>Ia menemukan sebuah penginapan dan beristirahat. Ia membersihkan pedangnya dan menatapnya. Pedang itu bersinar lebih terang dari sebelumnya, seolah ia bangga dengan pemiliknya.</p>
+            <p>Ia tidur nyenyak malam itu, bermimpi tentang petualangan yang menantinya. Ia tahu ia tidak bisa kembali ke kehidupannya yang membosankan. Ia telah memilih jalannya, dan ia tidak akan pernah menyesalinya.</p>
+            <p>Keesokan paginya, ia bangun dengan semangat baru. Ia siap untuk melanjutkan perjalanannya, siap untuk menghadapi tantangan-tantangan baru, dan siap untuk menjadi pahlawan yang ditakdirkan untuknya.</p>
+        </div>
+
+        <div class="chapter-navigation">
+            <select id="chapterSelect" class="chapter-select">
+                <option value="#">Pilih Bab</option>
+                <option value="bab_1.html">Bab 1</option>
+                <option value="bab_2.html">Bab 2</option>
+                <option value="bab_3.html">Bab 3</option>
+                <!-- Tambahkan lebih banyak bab di sini -->
+            </select>
+            <a href="bab_2.html" class="next-btn">Bab Selanjutnya &gt;</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const content = document.querySelector('.chapter-content');
+            const fontSizeUpBtn = document.getElementById('fontSizeUpBtn');
+            const fontSizeDownBtn = document.getElementById('fontSizeDownBtn');
+            const themeToggleBtn = document.getElementById('themeToggleBtn');
+            const chapterSelect = document.getElementById('chapterSelect');
+            const body = document.body;
+
+            // Atur ukuran font awal
+            let currentFontSize = parseFloat(getComputedStyle(content.querySelector('p')).fontSize);
+
+            // Fungsi untuk mengubah ukuran font
+            function changeFontSize(delta) {
+                currentFontSize += delta;
+                content.querySelectorAll('p').forEach(p => {
+                    p.style.fontSize = `${currentFontSize}px`;
+                });
+            }
+
+            // Atur event listener untuk tombol ukuran font
+            fontSizeUpBtn.addEventListener('click', () => changeFontSize(2));
+            fontSizeDownBtn.addEventListener('click', () => changeFontSize(-2));
+
+            // Periksa mode tema yang disimpan di localStorage
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggleBtn.textContent = 'Mode Terang';
+            } else {
+                body.classList.remove('dark-mode');
+                themeToggleBtn.textContent = 'Mode Gelap';
+            }
+
+            // Fungsi untuk mengubah tema
+            function toggleTheme() {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('theme', 'light');
+                    themeToggleBtn.textContent = 'Mode Gelap';
+                } else {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                    themeToggleBtn.textContent = 'Mode Terang';
+                }
+            }
+
+            // Atur event listener untuk tombol tema
+            themeToggleBtn.addEventListener('click', toggleTheme);
+            
+            // Atur event listener untuk dropdown bab
+            chapterSelect.addEventListener('change', (event) => {
+                if (event.target.value !== '#') {
+                    window.location.href = event.target.value;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
